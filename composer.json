@@ -1,0 +1,30 @@
+{
+    "autoload": {
+        "psr-4": {
+          "app\\": "app/"
+        }
+    },
+    "name": "root/html",
+    "license": "MID",
+    "authors": [
+        {
+            "name": "hrustbb2",
+            "email": "hrustbb2@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.14"
+    },
+    "scripts": {
+        "php-cs-fixer": "vendor/bin/php-cs-fixer fix ./app --rules=@PSR2",
+        "doc": "php phpDocumentor.phar run -d ./app -t ./doc"
+    },
+    "require": {
+        "aura/router": "^3.1",
+        "usmanhalalit/pixie": "^2.0",
+        "zendframework/zend-diactoros": "^1.8",
+        "respect/validation": "^1.1",
+        "zendframework/zend-session": "^2.8",
+        "gumlet/php-image-resize": "^1.9"
+    }
+}
